@@ -34,7 +34,7 @@ if(inputName.current.value ===""||inputAge.current.value === ""){
             alert("Por favor, preencha todos os campos.");}
 else{
 
-        const {data:newUser} = await axios.post("http://localhost:3001/users",
+        const {data:newUser} = await axios.post("https://api-node1.netlify.app/users",
         {name: inputName.current.value, 
         age: inputAge.current.value})
         console.log(newUser)
